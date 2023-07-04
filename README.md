@@ -59,45 +59,9 @@ The Old Message Server is a custom server implementation using standard Python s
 - Server-Client Communication: Clients can connect to the server and exchange messages.
 - Broadcast Messages: The server broadcasts messages received from one client to all connected clients.
 
-## FLOW DIAGRAM
+## Flow
 
 Here's a flow diagram illustrating the basic flow of the chat application:
-
-
-+-----------------+            +-----------------+
-|    User Login   |            |   Home Page     |
-+-----------------+            +-----------------+
-        |                             |
-        |                             |
-        v                             v
-+-----------------+            +-----------------+
-|    Login Form   |            |   Message Form  |
-+-----------------+            +-----------------+
-        |                             |
-        |                             |
-        v                             v
-+-----------------+            +-----------------+
-|    Process      |            |    Send         |
-|    Login        |            |    Message      |
-+-----------------+            +-----------------+
-        |                             |
-        |                             |
-        v                             v
-+-----------------+            +-----------------+
-|    Redirect     |            |   Broadcast     |
-|    to Home      |            |   Message to    |
-|    Page         |            |   Connected     |
-+-----------------+            |   Clients       |
-                               +-----------------+
-                                        |
-                                        |
-                                        v
-                               +-----------------+
-                               |   Receive       |
-                               |   Message       |
-                               |   from Server   |
-                               +-----------------+
-The flow diagram outlines the main steps of the chat application:
 
 User Login: The user provides their name and logs in.
 Login Form: The login form is displayed for the user to enter their name.
@@ -108,5 +72,3 @@ Message Form: The user enters a message in the form and submits it.
 Send Message: The server receives the message and broadcasts it to all connected clients.
 Broadcast Message to Connected Clients: The server sends the message to all connected clients.
 Receive Message from Server: Each client connected to the server receives the broadcasted message.
-
-Please note that this flow diagram provides a high-level overview of the chat application's flow
